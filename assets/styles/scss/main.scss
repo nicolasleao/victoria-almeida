@@ -1,0 +1,26 @@
+$primary: #a59bcf;
+$secondary: #e5dbe3;
+$tertiary: #ede9e8;
+$bg: white;
+
+.btn-primary {
+    background-color: $primary;
+    &:hover {
+        background-color: darken($primary, 10%);
+    }
+}
+
+.header {
+    .header-logo {
+        img {
+            width: 220px;
+        }
+    }
+}
+
+#hero-section {
+    height: 70vh;
+    background: url('../../img/hero-section-bg.jpg') no-repeat center 18%;
+    background-size: cover;
+    transition-property: background-position;
+}
