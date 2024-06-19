@@ -18,6 +18,15 @@ $bg: white;
     }
 }
 
+.bg-primary {
+    background-color: $primary;
+}
+
+.pretty-link {
+    color: $primary !important;
+  }
+  
+
 #hero-section {
     height: 70vh;
     background: url('../../img/hero-section-bg.jpg') no-repeat center 18%;
