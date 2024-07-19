@@ -24,12 +24,15 @@ $bg: white;
 
 .pretty-link {
     color: $primary !important;
-  }
-  
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 2px #00000055;
+}
 
 #hero-section {
     height: 70vh;
-    background: url('../../img/hero-section-bg.jpg') no-repeat center 18%;
+    background: url('../../img/hero-section-bg-alt-2.jpg') no-repeat center 18%;
     background-size: cover;
     transition-property: background-position;
 }

@@ -7,26 +7,16 @@
   width: 220px; }
 
 .bg-primary {
-  background-color: #a59bcf;
-}
+  background-color: #a59bcf; }
 
 .pretty-link {
-  color: #a59bcf !important;
-}
+  color: #a59bcf !important; }
 
-.hero-title {
-  margin-top: 120px;
-}
+.text-shadow {
+  text-shadow: 1px 1px 2px #00000055; }
 
 #hero-section {
   height: 70vh;
-  background: url("../../img/hero-section-bg.jpg") no-repeat center 18%;
+  background: url("../../img/hero-section-bg-alt-2.jpg") no-repeat center 18%;
   background-size: cover;
-  transition-property: background-position;
-}
-
-@media only screen and (max-width: 756px) {
-  .hero-title {
-    margin-top: 64px;
-  }
-}
+  transition-property: background-position; }
