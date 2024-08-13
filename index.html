@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="assets/styles/css/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+
     <title>Victória Almeida | Psicóloga</title>
 </head>
 <body>
@@ -169,7 +171,7 @@
 
     <!-- ABOUT SECTION -->
 
-    <section id="sobre" class="pt-10 overflow-hidden bg-gray-50 dark:bg-gray-800 md:pt-0 sm:pt-16 2xl:pt-16">
+    <section id="sobre" class="pt-10 overflow-hidden bg-gray-50 py-8 md:pb-0 sm:pt-16 2xl:pt-16">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="grid items-center grid-cols-1 md:grid-cols-2">
     
@@ -177,13 +179,13 @@
                     <img class="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src="assets/img/vic-frontal.png" alt="" />
                 </div>
                 <div>
-                    <h2 class="text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl">Sobre Mim</h2>
-                    <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 dark:text-gray-300 md:mt-8">
+                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl pt-8">Sobre Mim</h2>
+                    <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
                         Olá, me chamo Victória. Sou psicóloga clínica e pós-graduanda em terapias comportamentais contextuais, mas, sobretudo atuo com práticas baseadas em evidências em psicologia.
                         <br/>Em minha prática os elementos que mais valorizo são: vínculo terapêutico, acolhimento, ética e efetividade.
                     </p>
-                    <p class="mt-4 text-xl text-gray-600 dark:text-gray-300 md:mt-8">
-                        <a href="https://linktr.ee/victoriaalmeidapsi" target="_blank" class="pretty-link transition-all duration-200 text-sky-500 dark:text-sky-400 hover:text-sky-600 dark:hover:text-sky-500 hover:underline">Vamos caminhar juntos nesse processo! Agende sua sessão</a>
+                    <p class="mt-4 text-xl text-gray-600 md:mt-8">
+                        <a href="https://linktr.ee/victoriaalmeidapsi" target="_blank" class="pretty-link transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline">Vamos caminhar juntos nesse processo! Agende sua sessão</a>
                     </p>
                 </div>
             </div>
@@ -191,6 +193,158 @@
     </section>
     
 
+    <!-- FAQ Section -->
+    <section class="bg-white py-6">
+        <div class="container px-6 mx-auto">
+            <h1 class="text-2xl font-semibold text-gray-800 py-10 lg:text-3xl text-center">Perguntas Frequentes</h1>
+    
+            <hr class="my-6 border-gray-200s">
+    
+            <div>
+                <div x-data="{ isExpanded: false }">
+                    <button class="flex items-center focus:outline-none w-full" @click="isExpanded = ! isExpanded">
+                        <svg class="flex-shrink-0 w-6 h-6 text-purple-300" :class="isExpanded ? 'visilbe'  : 'hidden'" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                        </svg>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 text-purple-300"
+                            :class="isExpanded ? 'hidden'  : 'visible'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                
+                        <h1 class="mx-4 text-xl text-gray-700">Como saber se você precisa de psicoterapia?</h1>
+                    </button>
+                
+                    <div class="flex mt-8 md:mx-10" x-cloak x-show="isExpanded" id="accordionItemOne">
+                        <span class="border border-purple-300"></span>
+                
+                        <p class="container px-4 text-gray-500">
+                            É imprescindível que pessoas diagnosticadas com transtorno mental (ex.: Depressão, Ansiedade Generalizada, TDAH, TEA,
+                            Transtornos de Personalidade, entre muitos outros) estejam em tratamento com psicoterapia.
+                            Além disso, ainda que não possua diagnóstico, a terapia é extremamente benéfica para quem tem dificuldades emocionais e
+                            interpessoais, pois irá proporcionar uma compreensão efetiva sobre pensamentos e sentimentos
+                        </p>
+                    </div>
+                </div>
+    
+                <hr class="my-8 border-gray-200">
+    
+                <div x-data="{ isExpanded: false }">
+                    <button class="flex items-center focus:outline-none w-full" @click="isExpanded = ! isExpanded">
+                        <svg class="flex-shrink-0 w-6 h-6 text-purple-300" :class="isExpanded ? 'visilbe'  : 'hidden'" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                        </svg>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 text-purple-300"
+                            :class="isExpanded ? 'hidden'  : 'visible'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                
+                        <h1 class="mx-4 text-xl text-gray-700">Quanto tempo dura o tratamento?</h1>
+                    </button>
+                
+                    <div class="flex mt-8 md:mx-10" x-cloak x-show="isExpanded" id="accordionItemOne">
+                        <span class="border border-purple-300"></span>
+                
+                        <p class="container px-4 text-gray-500">
+                            Não é possível determinar um tempo de tratamento, pois cada processo terapêutico é único e requer necessidades
+                            diferentes.
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="my-8 border-gray-200">
+
+                <div x-data="{ isExpanded: false }">
+                    <button class="flex items-center focus:outline-none w-full" @click="isExpanded = ! isExpanded">
+                        <svg class="flex-shrink-0 w-6 h-6 text-purple-300" :class="isExpanded ? 'visilbe'  : 'hidden'" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                        </svg>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 text-purple-300"
+                            :class="isExpanded ? 'hidden'  : 'visible'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                
+                        <h1 class="mx-4 text-xl text-gray-700">Qual a frequência e duração da sessão?</h1>
+                    </button>
+                
+                    <div class="flex mt-8 md:mx-10" x-cloak x-show="isExpanded" id="accordionItemOne">
+                        <span class="border border-purple-300"></span>
+                
+                        <p class="container px-4 text-gray-500">
+                            Geralmente, a frequência das sessões é semanal e duram, em média, 50 minutos. Portanto, o atendimento é realizado uma
+                            vez por semana na maior parte dos casos.
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="my-8 border-gray-200">
+
+                <div x-data="{ isExpanded: false }">
+                    <button class="flex items-center focus:outline-none w-full" @click="isExpanded = ! isExpanded">
+                        <svg class="flex-shrink-0 w-6 h-6 text-purple-300" :class="isExpanded ? 'visilbe'  : 'hidden'" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                        </svg>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 text-purple-300"
+                            :class="isExpanded ? 'hidden'  : 'visible'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                
+                        <h1 class="mx-4 text-xl text-gray-700">Você atende por convênio/plano de saúde?</h1>
+                    </button>
+                
+                    <div class="flex mt-8 md:mx-10" x-cloak x-show="isExpanded" id="accordionItemOne">
+                        <span class="border border-purple-300"></span>
+                
+                        <p class="container px-4 text-gray-500">
+                            Apenas realizo atendimentos na modalidade particular. Entretanto, posso emitir recibo dos pagamentos para que o cliente
+                            solicite reembolso do plano de saúde.
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="my-8 border-gray-200">
+
+                <div x-data="{ isExpanded: false }">
+                    <button class="flex items-center focus:outline-none w-full" @click="isExpanded = ! isExpanded">
+                        <svg class="flex-shrink-0 w-6 h-6 text-purple-300" :class="isExpanded ? 'visilbe'  : 'hidden'" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                        </svg>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 text-purple-300"
+                            :class="isExpanded ? 'hidden'  : 'visible'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                
+                        <h1 class="mx-4 text-xl text-gray-700">Qual a sua abordagem terapêutica?</h1>
+                    </button>
+                
+                    <div class="flex mt-8 md:mx-10" x-cloak x-show="isExpanded" id="accordionItemOne">
+                        <span class="border border-purple-300"></span>
+                
+                        <p class="container px-4 text-gray-500">
+                            Utilizo as terapias comportamentais contextuais como norteadoras em meus atendimentos, especialmente, a Terapia de
+                            Aceitação e Compromisso (ACT) e a Psicoterapia Analítica Funcional (FAP). São abordagens colaborativas entre o terapeuta
+                            e o cliente, visando ajudá-lo a desenvolver uma compreensão aprofundada sobre si e o mundo que o rodeia. As terapias
+                            contextuais focam no contexto do cliente para compreender seus comportamentos.
+                            Assim, através da flexibilidade psicológica, proporciona meios para você realizar escolhas mais conscientes e saudáveis,
+                            afim de buscar uma vida que vale a pena ser vivida.
+                        </p>
+                    </div>
+                </div>
+    
+                <hr class="my-8 border-gray-200">
+
+            </div>
+        </div>
+    </section>
 
 
     <!-- GALLERY_SECTION -->
@@ -344,6 +498,7 @@
             document.getElementById("hero-section").style.backgroundPositionY = `calc(18% - ${parseInt(window.pageYOffset / 12)}px)`;
         };
     </script>
+
 </body>
 </html>
 
