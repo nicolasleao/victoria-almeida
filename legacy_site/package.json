@@ -1,0 +1,15 @@
+{
+  "name": "victoria-almeida",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-css": "node-sass assets/styles/scss -o assets/styles/css",
+    "autocompile-css": "node-sass assets/styles/scss -o assets/styles/css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

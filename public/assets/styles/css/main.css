@@ -1,0 +1,22 @@
+.btn-primary {
+  background-color: #a59bcf; }
+  .btn-primary:hover {
+    background-color: #8679be; }
+
+.header .header-logo img {
+  width: 220px; }
+
+.bg-primary {
+  background-color: #a59bcf; }
+
+.pretty-link {
+  color: #a59bcf !important; }
+
+.text-shadow {
+  text-shadow: 1px 1px 2px #00000055; }
+
+#hero-section {
+  height: 70vh;
+  background: url("../../img/foto-victoria-frente-inicio-alt.jpg") no-repeat center 18%;
+  background-size: cover;
+  transition-property: background-position; }
