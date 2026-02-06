@@ -14,7 +14,7 @@ export default function Footer() {
             <h3 className="text-2xl font-serif font-bold text-white">Victória Almeida</h3>
             <p className="text-stone-400 leading-relaxed">
               Psicóloga Clínica especialista em terapias comportamentais contextuais.
-              CRP 15/5541
+              CRP 15/7630
             </p>
             <div className="flex gap-4">
               <Link 
@@ -59,9 +59,9 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-primary mt-1 flex-shrink-0" />
                 <span className="text-sm leading-relaxed">
-                  R. Dr. Sebastião da Hora, 444<br />
-                  Gruta de Lourdes, Maceió - AL<br />
-                  57052-825
+                  Empresarial Comendador Palmeira, 239<br />
+		  Farol, Maceió-AL<br />
+                  CEP 57051-150
                 </span>
               </li>
             </ul>
@@ -76,4 +76,3 @@ export default function Footer() {
     </footer>
   );
 }
-
