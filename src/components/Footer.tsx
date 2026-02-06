@@ -59,7 +59,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-primary mt-1 flex-shrink-0" />
                 <span className="text-sm leading-relaxed">
-                  Empresarial Comendador Palmeira, 239<br />
+                  Empresarial Comendador Palmeira, 493<br />
 		  Farol, Maceió-AL<br />
                   CEP 57051-150
                 </span>
